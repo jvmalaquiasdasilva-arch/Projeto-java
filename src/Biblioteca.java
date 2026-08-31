@@ -13,8 +13,6 @@ public class Biblioteca {
         this.emprestimos = new ArrayList<>();
     }
 
-    // ---------- LIVROS ----------
-
     public void cadastrarLivro(Livro livro) {
         livros.add(livro);
     }
@@ -33,7 +31,6 @@ public class Biblioteca {
         }
     }
 
-    // ---------- USUÁRIOS ----------
 
     public void cadastrarUsuario(Usuario usuario) {
         usuarios.add(usuario);
@@ -53,14 +50,12 @@ public class Biblioteca {
         }
     }
 
-    // ---------- EMPRÉSTIMOS ----------
 
     public boolean realizarEmprestimo(Livro livro, Usuario usuario) {
         if (livro == null || usuario == null) {
             return false;
         }
         if (!livro.isDisponivel()) {
-            // regra: não pode emprestar livro indisponível
             return false;
         }
         livro.setDisponivel(false);
@@ -70,7 +65,6 @@ public class Biblioteca {
 
     public boolean devolverLivro(Livro livro) {
         if (livro == null || livro.isDisponivel()) {
-            // livro já está disponível, ou seja, não estava emprestado
             return false;
         }
 
