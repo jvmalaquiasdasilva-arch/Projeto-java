@@ -9,7 +9,7 @@ public class Livro {
         this.titulo = titulo;
         this.autor = autor;
         this.anoPublicacao = anoPublicacao;
-        this.disponivel = true; // todo livro cadastrado começa disponível
+        this.disponivel = true; 
     }
 
     public String getTitulo() {
