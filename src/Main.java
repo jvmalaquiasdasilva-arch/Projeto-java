@@ -22,7 +22,7 @@ public class Main {
             System.out.print("Escolha uma opção: ");
 
             opcao = scanner.nextInt();
-            scanner.nextLine(); // limpar o buffer
+            scanner.nextLine(); 
 
             if (opcao == 1) {
                 cadastrarLivro();
@@ -57,7 +57,6 @@ public class Main {
         scanner.close();
     }
 
-    // ---------- LIVROS ----------
 
     static void cadastrarLivro() {
         System.out.println("\n--- CADASTRO DE LIVRO ---");
@@ -78,7 +77,6 @@ public class Main {
         System.out.println("Livro cadastrado com sucesso!");
     }
 
-    // ---------- USUÁRIOS ----------
 
     static void cadastrarUsuario() {
         System.out.println("\n--- CADASTRO DE USUÁRIO ---");
@@ -121,7 +119,6 @@ public class Main {
         }
     }
 
-    // ---------- EMPRÉSTIMO ----------
 
     static void realizarEmprestimo() {
         System.out.println("\n--- REALIZAR EMPRÉSTIMO ---");
