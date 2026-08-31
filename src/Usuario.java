@@ -34,7 +34,6 @@ public abstract class Usuario {
         this.email = email;
     }
 
-    // Cada subclasse (Aluno, Funcionario) define seu próprio "tipo" e dados extras
     public abstract String getTipo();
 
     public abstract String getDadosEspecificos();
